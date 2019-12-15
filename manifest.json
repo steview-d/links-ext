@@ -17,7 +17,7 @@
         "matches": [
             "<all_urls>"
         ],
-        "js": ["libs/jquery-3.4.1.min.js", "content.js"]
+        "js": ["content.js"]
     }],
     "icons": {
         "32": "icon/add_url_32px.png",
