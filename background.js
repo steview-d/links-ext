@@ -1,5 +1,5 @@
 // Do this when the browser extension icon is clicked
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.browserAction.onClicked.addListener(_ => {
     // Message the active tab to say the extension button has been clicked
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
         let activeTab = tabs[0];
@@ -10,7 +10,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 });
 
 // Listen for a URL to open, and when received, open it in a new tab
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener((request) => {
     if (request.message === "open_links_app_with_new_url") {
         chrome.tabs.create({ url: request.url });
     }

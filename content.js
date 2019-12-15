@@ -1,5 +1,5 @@
 // Listen for a browser click and when received, open a new tab with the url created below
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener((request) => {
     if (request.message === "add_url_clicked") {
         // Eventually, this will build the url into an endpoint for the 'links' app
         let destination = window.location.href;
