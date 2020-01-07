@@ -1,11 +1,14 @@
 // Listen for a browser click and when received, open a new tab with the url created below
-chrome.runtime.onMessage.addListener((request) => {
+chrome.runtime.onMessage.addListener(request => {
     if (request.message === "add_url_clicked") {
-        // Eventually, this will build the url into an endpoint for the 'links' app
+        // Get URL to send to app
         let destination = window.location.href;
+
+        localStorage.setItem('url', destination);
         chrome.runtime.sendMessage({
             message: "open_links_app_with_new_url",
-            url: destination
+            app: "http://127.0.0.1:8000/app/import-url",
+            destination: destination
         });
     }
 });
