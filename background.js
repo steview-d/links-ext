@@ -9,7 +9,8 @@ chrome.browserAction.onClicked.addListener(_ => {
     });
 });
 
-// Listen for a URL to open, and when received, open it in a new tab
+// Listen for a URL and when received, open the app and append the requested
+// URL using HTTP GET
 chrome.runtime.onMessage.addListener(request => {
     if (request.message === "open_links_app_with_new_url") {
         chrome.tabs.create({ url: request.app + '/?url=' + request.destination });
