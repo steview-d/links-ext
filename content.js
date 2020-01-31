@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener(request => {
         localStorage.setItem('url', destination);
         chrome.runtime.sendMessage({
             message: "open_links_app_with_new_url",
-            app: "http://127.0.0.1:8000/app/_import-url",
+            app: "https://links-sw.herokuapp.com/app/_import-url",
             destination: destination
         });
     }
