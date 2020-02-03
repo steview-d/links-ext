@@ -6,9 +6,7 @@ At it's most basic level, the app will store a users bookmarks for easy referenc
 
 To aid users in adding bookmarks to the app, rather than forcing them to continually copy / paste urls from the address bar and add them manually, this extension is designed to make the whole process quicker and easier.
 
-When a user clicks on the extension, it will (eventually) open a new tab which points to the links app, and also sends the current URL to an 'add url' view.
-
-Currently, it just opens a new tab. It will direct to the app and ``work`` once the project itself can handle the incoming request.
+When a user clicks on the extension, it will open a new tab which points to the links app, and also sends the current URL to an 'import url' view.
 
 From there the app will take care of the rest, the extension simply copies the current page address, and throws it at the Links app.
 
@@ -26,4 +24,4 @@ That should be all, and a little blue icon should appear alongside all your othe
 
 #### Acknowledgements
 
-Icon sourced from [getdrawings.com](http://getdrawings.com/) and used with permission.
+Original unedited icon sourced from [favpng.com](http://favpng.com/) and used with permission.
