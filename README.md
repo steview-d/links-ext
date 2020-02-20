@@ -25,3 +25,5 @@ That should be all, and a little blue icon should appear alongside all your othe
 #### Acknowledgements
 
 Original unedited icon sourced from [favpng.com](http://favpng.com/) and used with permission.
+
+This [Stack Overflow post](https://stackoverflow.com/questions/23208134/avoid-dynamically-injecting-the-same-script-multiple-times-when-using-chrome-tab) helped me solve the issue of the extension opening multiple tabs on each successive click and this [kind soul](https://stackoverflow.com/questions/60321893/how-to-stop-chrome-injecting-the-same-script-on-each-click-when-using-chrome-tab) helped me see the wood for the trees.
