@@ -1,7 +1,7 @@
 {
     "name": "Links",
-    "manifest_version": 2,
-    "version": "0.2",
+    "manifest_version": 3,
+    "version": "0.3",
     "description": "A simple extension that copies the URL from the active tabs address bar, and sends it to the 'Links' app.",
     "browser_action": {
         "default_icon": {
